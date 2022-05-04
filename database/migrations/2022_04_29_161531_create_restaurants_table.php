@@ -18,7 +18,7 @@ class CreateRestaurantsTable extends Migration
             $table->string("name");
             $table->text("introduction");
             $table->text("menu");
-            $table->string("active_time");
+            $table->text("active_time");
         });
     }
 

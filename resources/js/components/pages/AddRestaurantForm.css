@@ -1,0 +1,25 @@
+.add-form {
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  color: azure;
+  padding-top: 20px;
+}
+
+.add-form > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-form input + textarea {
+  width: 80vw;
+}
+.add-form label {
+  font-size: large;
+  text-align: center;
+}

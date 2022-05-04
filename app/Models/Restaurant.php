@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
 {
-    use HasFactory;
+  use HasFactory;
+  protected $table = 'restaurants';
+  protected $fillable = [
+    'name',
+    'introduction',
+    'menu',
+    'active_time'
+  ];
+  public $timestamps = false;
 }
