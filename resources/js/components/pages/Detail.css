@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "RadioCanada";
+  src: url("../../../asset/Font/RadioCanada-VariableFont_wdth\,wght.ttf");
+}
+.detail-container {
+  display: flex;
+  margin: 0 auto 0;
+  width: 90vw;
+  height: 80vh;
+  font-family: "RadioCanada", Courier, monospace;
+}
+.detail-container img {
+  width: 40vw;
+  height: auto;
+  object-fit: cover;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #00c853, #b2ff59);
+}
+.detail-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 40vw;
+  margin-left: 1rem;
+}
+.Label {
+  font-size: 1.5em;
+}
+.restaurant-id {
+  font-size: 1em;
+}
+.name {
+  font-size: 2em;
+}
+.control-container {
+  max-width: 80vw;
+}
+.deleteConfirm-ctn {
+  position: absolute;
+  display: flex;
+  font-size: medium;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto auto;
+  background-color: rgb(255, 240, 240);
+  border: #000 solid 5px;
+  border-radius: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  top: 30vh;
+  left: 25vw;
+  right: 25vw;
+}
+.deleteConfirm-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

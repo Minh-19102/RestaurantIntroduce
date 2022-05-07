@@ -1,27 +1,29 @@
 import axios from "axios";
 import React, { Component } from "react";
-import "./AddRestaurantForm.css";
-import Button from "../main-ui/Button";
 import PopUpMessage from "../main-ui/PopUpMessage";
-export default class AddRestaurantForm extends Component {
+import "./EditRestaurantForm.css";
+import Button from "../main-ui/Button";
+export default class EditRestaurantForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      introduction: "",
-      menu: "",
-      active_time: "",
+      name: props.name,
+      introduction: props.introduction,
+      menu: props.menu,
+      active_time: props.active_time,
       "restaurant-image": "",
-      message: false,
+      message: null,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFileSelect = this.handleFileSelect.bind(this);
   }
   saveRestaurant = async (e) => {
     e.preventDefault();
-    const res = await axios.post("/api/restaurants", this.state);
+    const res = await axios.put(
+      `/api/restaurants/${this.props.id}`,
+      this.state
+    );
     if (res.data.status == 200) {
-      console.log(res.data.message);
       this.setState({
         name: "",
         introduction: "",
@@ -30,10 +32,10 @@ export default class AddRestaurantForm extends Component {
         "restaurant-image": "",
         message: true,
       });
-      setTimeout(function () {
-        window.location.replace("/RestaurantsList");
-      }, 3000);
-    }
+    } else this.setState({ message: false });
+    setTimeout(function () {
+      window.location.replace("/RestaurantsList");
+    }, 3000);
   };
   handleInputChange = (e) => {
     this.setState({
@@ -112,12 +114,22 @@ export default class AddRestaurantForm extends Component {
             </Button>
           </div>
         </form>
-        {this.state.message && (
-          <PopUpMessage>
-            Added Succeffully
-            <br />
-            You will be redirected in 3 seconds
-          </PopUpMessage>
+        {this.state.message != null ? (
+          this.state.message ? (
+            <PopUpMessage>
+              Updated Successfully
+              <br />
+              You will be redirected in 3 seconds
+            </PopUpMessage>
+          ) : (
+            <PopUpMessage messageStyle="redPopUp">
+              Updated Unsuccessfully
+              <br />
+              You will be redirected in 3 seconds
+            </PopUpMessage>
+          )
+        ) : (
+          <></>
         )}
       </div>
     );

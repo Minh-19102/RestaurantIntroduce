@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { Route, Link } from "react-router-dom";
 import axios from "axios";
 import Card from "../main-ui/Card";
 import "./RestaurantsList.css";
 import AddRestaurantForm from "./AddRestaurantForm";
+import Button from "../main-ui/Button";
 export default class RestaurantsList extends Component {
   constructor(props) {
     super(props);
@@ -25,15 +27,18 @@ export default class RestaurantsList extends Component {
         restaurantsList: res.data,
         loaded: true,
       });
-      console.log(this.state);
     }
   }
   render() {
     return (
       <div>
-        Restaurants List
-        <button onClick={this.handleAddFormClick}>Add</button>
-        {this.state.showForm && <AddRestaurantForm />}
+        <div className="title">Restaurants List</div>
+        <Button btnStyle="add" btnClick={this.handleAddFormClick}>
+          Add
+        </Button>
+        {this.state.showForm && (
+          <AddRestaurantForm handle={this.handleAddFormClick} />
+        )}
         <div className="list-container">
           {this.state.loaded &&
             this.state.restaurantsList.map((restaurant) => (

@@ -2090,15 +2090,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _main_ui_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main-ui/Navbar */ "./resources/js/components/main-ui/Navbar.jsx");
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Home */ "./resources/js/components/pages/Home.jsx");
 /* harmony import */ var _pages_RestaurantsList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/RestaurantsList */ "./resources/js/components/pages/RestaurantsList.jsx");
 /* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Contact */ "./resources/js/components/pages/Contact.jsx");
 /* harmony import */ var _pages_AboutUs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/AboutUs */ "./resources/js/components/pages/AboutUs.jsx");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./App.css */ "./resources/js/components/App.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _pages_Detail__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Detail */ "./resources/js/components/pages/Detail.jsx");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./App.css */ "./resources/js/components/App.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2133,6 +2134,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var App = /*#__PURE__*/function (_Component) {
   _inherits(App, _Component);
 
@@ -2147,20 +2149,23 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_main_ui_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_main_ui_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Routes, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
             path: "/",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
             path: "/AboutUs",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
             path: "/RestaurantsList",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_pages_RestaurantsList__WEBPACK_IMPORTED_MODULE_4__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_pages_RestaurantsList__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+            path: "/RestaurantsList/:pathParam",
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_pages_Detail__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
             path: "/Contact",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_pages_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_pages_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], {})
           })]
         })]
       });
@@ -2171,7 +2176,7 @@ var App = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(App, {}), document.getElementById("app"));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(App, {}), document.getElementById("app"));
 
 /***/ }),
 
@@ -2192,15 +2197,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var btnStyle = ["btn-primary", "btn-navbar-type", "btn-normal"];
+var btnStyle = ["btn-primary", "btn-navbar-type", "btn-type2", "add", "delete", "edit"];
 var btnSize = ["btn-large", "btn-big", "btn-normal", "btn-small"];
 
 function Button(props) {
-  var styles, size;
+  var styles, size, color;
   if (props.btnStyle == undefined) styles = btnStyle[0];else styles = props.btnStyle;
   if (props.btnSize == undefined) size = btnSize[0];else size = props.btnSize;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
     className: "".concat(styles, " ").concat(size),
+    onClick: props.btnClick,
     children: props.children
   });
 }
@@ -2223,8 +2229,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card.css */ "./resources/js/components/main-ui/Card.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _main_ui_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../main-ui/Button */ "./resources/js/components/main-ui/Button.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -2242,6 +2250,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function Card(props) {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -2253,17 +2263,23 @@ function Card(props) {
       return setImg(data);
     });
   }, []);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "card",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: img.url
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "restaurant-id",
       children: ["#", props.id]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
       children: props.name
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
       children: props.introduction
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+      to: "".concat(props.id),
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        btnStyle: "btn-type2",
+        children: "Learn more..."
+      })
     })]
   });
 }
@@ -2452,6 +2468,38 @@ var Navbar = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/main-ui/PopUpMessage.jsx":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/main-ui/PopUpMessage.jsx ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _PopUpMessage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PopUpMessage.css */ "./resources/js/components/main-ui/PopUpMessage.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+function PopUpMessage(props) {
+  var styles = ["greenPopUp", "redPopUp"];
+  var messageStyle = styles[0];
+  if (props.messageStyle != undefined) messageStyle = props.messageStyle;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: messageStyle,
+    children: props.children
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PopUpMessage);
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/AboutUs.jsx":
 /*!***************************************************!*\
   !*** ./resources/js/components/pages/AboutUs.jsx ***!
@@ -2495,7 +2543,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _AddRestaurantForm_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AddRestaurantForm.css */ "./resources/js/components/pages/AddRestaurantForm.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _main_ui_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../main-ui/Button */ "./resources/js/components/main-ui/Button.jsx");
+/* harmony import */ var _main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../main-ui/PopUpMessage */ "./resources/js/components/main-ui/PopUpMessage.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 
@@ -2525,6 +2575,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -2566,8 +2618,13 @@ var AddRestaurantForm = /*#__PURE__*/function (_Component) {
                     introduction: "",
                     menu: "",
                     active_time: "",
-                    "restaurant-image": ""
+                    "restaurant-image": "",
+                    message: true
                   });
+
+                  setTimeout(function () {
+                    window.location.replace("/RestaurantsList");
+                  }, 3000);
                 }
 
               case 5:
@@ -2604,7 +2661,8 @@ var AddRestaurantForm = /*#__PURE__*/function (_Component) {
       introduction: "",
       menu: "",
       active_time: "",
-      "restaurant-image": ""
+      "restaurant-image": "",
+      message: false
     };
     _this.handleInputChange = _this.handleInputChange.bind(_assertThisInitialized(_this));
     _this.handleFileSelect = _this.handleFileSelect.bind(_assertThisInitialized(_this));
@@ -2614,59 +2672,74 @@ var AddRestaurantForm = /*#__PURE__*/function (_Component) {
   _createClass(AddRestaurantForm, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         className: "add-form",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          btnStyle: "delete",
+          btnClick: this.props.handle,
+          btnSize: "btn-normal",
+          children: "Exit"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
           onSubmit: this.saveRestaurant,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+          className: "main-form",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
             htmlFor: "name",
             children: "Name"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
             type: "text",
             name: "name",
             size: "38",
             onChange: this.handleInputChange,
             value: this.state.name
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
             htmlFor: "introduction",
             children: "Introduction"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
             name: "introduction",
             rows: "4",
             cols: "40",
             onChange: this.handleInputChange,
             value: this.state.introduction
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
             htmlFor: "menu",
             children: "Menu"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
             name: "menu",
-            rows: "4",
+            rows: "2",
             cols: "40",
             onChange: this.handleInputChange,
             value: this.state.menu
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
             htmlFor: "active_time",
             children: "Active Time"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
             name: "active_time",
-            rows: "4",
+            rows: "2",
             cols: "40",
             onChange: this.handleInputChange,
             value: this.state.active_time
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
             htmlFor: "image",
             children: "Choose an image "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
             type: "file",
             name: "restaurant-image",
             accept: "image/*",
             onChange: this.handleFileSelect
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-            type: "submit",
-            value: "Submit"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            className: "submit-ctn",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              btnStyle: "add",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                className: "submit-btn",
+                type: "submit",
+                value: "Submit"
+              })
+            })
           })]
-        })
+        }), this.state.message && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: ["Added Succeffully", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), "You will be redirected in 3 seconds"]
+        })]
       });
     }
   }]);
@@ -2736,6 +2809,479 @@ function Contact() {
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/Detail.jsx":
+/*!**************************************************!*\
+  !*** ./resources/js/components/pages/Detail.jsx ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Detail)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _main_ui_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../main-ui/Button */ "./resources/js/components/main-ui/Button.jsx");
+/* harmony import */ var _Detail_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Detail.css */ "./resources/js/components/pages/Detail.css");
+/* harmony import */ var _main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../main-ui/PopUpMessage */ "./resources/js/components/main-ui/PopUpMessage.jsx");
+/* harmony import */ var _EditRestaurantForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./EditRestaurantForm */ "./resources/js/components/pages/EditRestaurantForm.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+
+var Detail = /*#__PURE__*/function (_Component) {
+  _inherits(Detail, _Component);
+
+  var _super = _createSuper(Detail);
+
+  function Detail(props) {
+    var _this;
+
+    _classCallCheck(this, Detail);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handleEditClick", function () {
+      _this.setState(function (state) {
+        return {
+          edit: !state.edit
+        };
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleDeleteClick", function () {
+      _this.setState(function (state) {
+        return {
+          "delete": !state["delete"]
+        };
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "deleteRestaurant", function () {
+      axios__WEBPACK_IMPORTED_MODULE_2___default()["delete"]("http://127.0.0.1:8000/api/restaurants/".concat(_this.state.id)).then(function (res) {
+        _this.setState(function (state) {
+          return {
+            "delete": false,
+            deletedMessage: true
+          };
+        });
+
+        setTimeout(function () {
+          window.location.replace("/RestaurantsList");
+        }, 3000);
+      });
+    });
+
+    _this.state = {
+      id: window.location.pathname.split("/").at(-1),
+      imgURL: [],
+      name: "",
+      introduction: "",
+      menu: "",
+      "active-time": "",
+      edit: false,
+      "delete": false,
+      deletedMessage: false
+    };
+    _this.handleDeleteClick = _this.handleDeleteClick.bind(_assertThisInitialized(_this));
+    _this.handleEditClick = _this.handleEditClick.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Detail, [{
+    key: "componentDidMount",
+    value: function () {
+      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        var _this2 = this;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return fetch("http://127.0.0.1:8000/api/restaurant-image/" + this.state.id).then(function (data) {
+                  return _this2.setState({
+                    imgURL: data.url
+                  });
+                });
+
+              case 2:
+                _context.next = 4;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default().get("http://127.0.0.1:8000/api/restaurants/".concat(this.state.id)).then(function (restaurant) {
+                  return restaurant.data;
+                }).then(function (data) {
+                  _this2.setState({
+                    name: data.name,
+                    introduction: data.introduction,
+                    menu: data.menu,
+                    active_time: data.active_time
+                  });
+                });
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentDidMount() {
+        return _componentDidMount.apply(this, arguments);
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "detail-container",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+            src: this.state.imgURL,
+            alt: "Restaurant image"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+            className: "detail-card",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+              className: "restaurant-id",
+              children: ["Restaurant's ID: #", this.state.id]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              className: "name",
+              children: this.state.name
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              className: "introduction",
+              children: this.state.introduction
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+              className: "menu",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+                className: "Label",
+                children: "Menu"
+              }), this.state.menu]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+              className: "active_time",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+                className: "Label",
+                children: "Active time"
+              }), this.state.active_time]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+              className: "control-container",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                btnStyle: "edit",
+                btnSize: "btn-normal",
+                btnClick: this.handleEditClick,
+                children: "Edit"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                btnStyle: "delete",
+                btnSize: "btn-normal",
+                btnClick: this.handleDeleteClick,
+                children: "Delete"
+              })]
+            })]
+          })]
+        }), this.state.edit && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_EditRestaurantForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          handle: this.handleEditClick,
+          id: this.state.id,
+          name: this.state.name,
+          introduction: this.state.introduction,
+          menu: this.state.menu,
+          active_time: this.state.active_time
+        }), this.state["delete"] && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "deleteConfirm-ctn",
+          children: ["Do you really want to delete this restaurant's information", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+            className: "deleteConfirm-btn",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+              btnStyle: "delete",
+              btnClick: this.deleteRestaurant,
+              children: "Yes"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+              btnClick: this.handleDeleteClick,
+              children: "No"
+            })]
+          })]
+        }), this.state.deletedMessage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: ["Deleted Successfully", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), "You will be redirected in 3 seconds"]
+        })]
+      });
+    }
+  }]);
+
+  return Detail;
+}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/EditRestaurantForm.jsx":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/pages/EditRestaurantForm.jsx ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ EditRestaurantForm)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../main-ui/PopUpMessage */ "./resources/js/components/main-ui/PopUpMessage.jsx");
+/* harmony import */ var _EditRestaurantForm_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./EditRestaurantForm.css */ "./resources/js/components/pages/EditRestaurantForm.css");
+/* harmony import */ var _main_ui_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../main-ui/Button */ "./resources/js/components/main-ui/Button.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+
+var EditRestaurantForm = /*#__PURE__*/function (_Component) {
+  _inherits(EditRestaurantForm, _Component);
+
+  var _super = _createSuper(EditRestaurantForm);
+
+  function EditRestaurantForm(props) {
+    var _this;
+
+    _classCallCheck(this, EditRestaurantForm);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "saveRestaurant", /*#__PURE__*/function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
+        var res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                e.preventDefault();
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("/api/restaurants/".concat(_this.props.id), _this.state);
+
+              case 3:
+                res = _context.sent;
+
+                if (res.data.status == 200) {
+                  _this.setState({
+                    name: "",
+                    introduction: "",
+                    menu: "",
+                    active_time: "",
+                    "restaurant-image": "",
+                    message: true
+                  });
+                } else _this.setState({
+                  message: false
+                });
+
+                setTimeout(function () {
+                  window.location.replace("/RestaurantsList");
+                }, 3000);
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }());
+
+    _defineProperty(_assertThisInitialized(_this), "handleInputChange", function (e) {
+      _this.setState(_defineProperty({}, e.target.name, e.target.value));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleFileSelect", function (e) {
+      var files = e.target.files;
+      var fileReader = new FileReader();
+      fileReader.readAsDataURL(files[0]);
+
+      fileReader.onload = function (event) {
+        _this.setState({
+          "restaurant-image": event.target.result
+        });
+      };
+    });
+
+    _this.state = {
+      name: props.name,
+      introduction: props.introduction,
+      menu: props.menu,
+      active_time: props.active_time,
+      "restaurant-image": "",
+      message: null
+    };
+    _this.handleInputChange = _this.handleInputChange.bind(_assertThisInitialized(_this));
+    _this.handleFileSelect = _this.handleFileSelect.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(EditRestaurantForm, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "add-form",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          btnStyle: "delete",
+          btnClick: this.props.handle,
+          btnSize: "btn-normal",
+          children: "Exit"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
+          onSubmit: this.saveRestaurant,
+          className: "main-form",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            htmlFor: "name",
+            children: "Name"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+            type: "text",
+            name: "name",
+            size: "38",
+            onChange: this.handleInputChange,
+            value: this.state.name
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            htmlFor: "introduction",
+            children: "Introduction"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+            name: "introduction",
+            rows: "4",
+            cols: "40",
+            onChange: this.handleInputChange,
+            value: this.state.introduction
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            htmlFor: "menu",
+            children: "Menu"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+            name: "menu",
+            rows: "2",
+            cols: "40",
+            onChange: this.handleInputChange,
+            value: this.state.menu
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            htmlFor: "active_time",
+            children: "Active Time"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+            name: "active_time",
+            rows: "2",
+            cols: "40",
+            onChange: this.handleInputChange,
+            value: this.state.active_time
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            htmlFor: "image",
+            children: "Choose an image "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+            type: "file",
+            name: "restaurant-image",
+            accept: "image/*",
+            onChange: this.handleFileSelect
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            className: "submit-ctn",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              btnStyle: "add",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                className: "submit-btn",
+                type: "submit",
+                value: "Submit"
+              })
+            })
+          })]
+        }), this.state.message != null ? this.state.message ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          children: ["Updated Successfully", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), "You will be redirected in 3 seconds"]
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_main_ui_PopUpMessage__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          messageStyle: "redPopUp",
+          children: ["Updated Unsuccessfully", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), "You will be redirected in 3 seconds"]
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {})]
+      });
+    }
+  }]);
+
+  return EditRestaurantForm;
+}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/Home.jsx":
 /*!************************************************!*\
   !*** ./resources/js/components/pages/Home.jsx ***!
@@ -2781,7 +3327,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main_ui_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../main-ui/Card */ "./resources/js/components/main-ui/Card.jsx");
 /* harmony import */ var _RestaurantsList_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RestaurantsList.css */ "./resources/js/components/pages/RestaurantsList.css");
 /* harmony import */ var _AddRestaurantForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AddRestaurantForm */ "./resources/js/components/pages/AddRestaurantForm.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _main_ui_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../main-ui/Button */ "./resources/js/components/main-ui/Button.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 
@@ -2809,6 +3356,8 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
 
 
 
@@ -2867,7 +3416,6 @@ var RestaurantsList = /*#__PURE__*/function (_Component) {
                     restaurantsList: res.data,
                     loaded: true
                   });
-                  console.log(this.state);
                 }
 
               case 4:
@@ -2887,14 +3435,20 @@ var RestaurantsList = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-        children: ["Restaurants List", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-          onClick: this.handleAddFormClick,
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "title",
+          children: "Restaurants List"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_main_ui_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          btnStyle: "add",
+          btnClick: this.handleAddFormClick,
           children: "Add"
-        }), this.state.showForm && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_AddRestaurantForm__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        }), this.state.showForm && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_AddRestaurantForm__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          handle: this.handleAddFormClick
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
           className: "list-container",
           children: this.state.loaded && this.state.restaurantsList.map(function (restaurant) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_main_ui_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_main_ui_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
               id: restaurant.id,
               name: restaurant.name,
               introduction: restaurant.introduction
@@ -2953,7 +3507,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-primary {\n  background-color: #ffffff;\n  border: 1px solid #222222;\n  border-radius: 8px;\n  box-sizing: border-box;\n  color: #222222;\n  cursor: pointer;\n  display: inline-block;\n  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,\n    \"Helvetica Neue\", sans-serif;\n  margin: 0;\n  outline: none;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  touch-action: manipulation;\n  transition: box-shadow 0.2s, transform 0.1s;\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  width: auto;\n}\n\n.btn-primary:focus-visible {\n  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;\n  transition: box-shadow 0.2s;\n}\n\n.btn-primary:active {\n  background-color: #f7f7f7;\n  border-color: #000000;\n  transform: scale(0.96);\n}\n\n.btn-primary:disabled {\n  border-color: #dddddd;\n  color: #dddddd;\n  cursor: not-allowed;\n  opacity: 1;\n}\n\n.btn-navbar-type {\n  background-color: #ffffff;\n  border: 1px solid #222222;\n  border-radius: 6px;\n  box-sizing: border-box;\n  color: #222222;\n  cursor: pointer;\n  display: inline-block;\n  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,\n    \"Helvetica Neue\", sans-serif;\n  margin: 0 5px 0;\n  outline: none;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  touch-action: manipulation;\n  transition: box-shadow 0.2s, transform 0.1s;\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  width: auto;\n}\n\n.btn-navbar-type:focus-visible {\n  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;\n  transition: box-shadow 0.2s;\n}\n\n.btn-navbar-type:active {\n  background-color: #f7f7f7;\n  border-color: #000000;\n  transform: scale(0.96);\n}\n\n.btn-navbar-type:disabled {\n  border-color: #dddddd;\n  color: #dddddd;\n  cursor: not-allowed;\n  opacity: 1;\n}\n.btn-navbar-type:hover {\n  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;\n  border: 1px solid #000000;\n  background-color: #0066ff;\n  color: #f7f7f7;\n  transform: translateY(-2px);\n}\n\n.btn-type2 {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background-color: #000000;\n  border: 2px solid #1a1a1a;\n  border-radius: 15px;\n  box-sizing: border-box;\n  color: #ffffff;\n  cursor: pointer;\n  display: inline-block;\n  font-family: Roobert, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica,\n    Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  line-height: normal;\n  margin: 0;\n  min-height: 60px;\n  min-width: 0;\n  outline: none;\n  text-align: center;\n  text-decoration: none;\n  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n  width: 100%;\n  will-change: transform;\n}\n\n.btn-type2:disabled {\n  pointer-events: none;\n}\n\n.btn-type2:hover {\n  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;\n  transform: translateY(-2px);\n}\n\n.btn-type2:active {\n  box-shadow: none;\n  transform: translateY(0);\n}\n\n.btn-large {\n  font-size: 16px;\n  font-weight: 600;\n  line-height: 20px;\n  padding: 16px 24px;\n}\n\n.btn-normal {\n  font-size: 12px;\n  font-weight: 600;\n  line-height: 12px;\n  padding: 12px 18px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-primary {\n  background-color: #ffffff;\n  border: 1px solid #222222;\n  border-radius: 8px;\n  box-sizing: border-box;\n  color: #222222;\n  cursor: pointer;\n  display: inline-block;\n  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,\n    \"Helvetica Neue\", sans-serif;\n  margin: 0;\n  outline: none;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  touch-action: manipulation;\n  transition: box-shadow 0.2s, transform 0.1s;\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  width: auto;\n}\n\n.btn-primary:focus-visible {\n  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;\n  transition: box-shadow 0.2s;\n}\n\n.btn-primary:active {\n  background-color: #f7f7f7;\n  border-color: #000000;\n  transform: scale(0.96);\n}\n\n.btn-primary:disabled {\n  border-color: #dddddd;\n  color: #dddddd;\n  cursor: not-allowed;\n  opacity: 1;\n}\n\n.btn-navbar-type,\n.add,\n.edit,\n.delete {\n  background-color: #ffffff;\n  border: 1px solid #222222;\n  border-radius: 6px;\n  box-sizing: border-box;\n  color: #222222;\n  cursor: pointer;\n  display: inline-block;\n  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,\n    \"Helvetica Neue\", sans-serif;\n  margin: 0 5px 0;\n  outline: none;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  touch-action: manipulation;\n  transition: box-shadow 0.2s, transform 0.1s;\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  width: auto;\n}\n\n.btn-navbar-type:focus-visible,\n.add:focus-visible,\n.edit:focus-visible,\n.delete:focus-visible {\n  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;\n  transition: box-shadow 0.2s;\n}\n\n.btn-navbar-type:active,\n.add:active,\n.edit:active,\n.delete:active {\n  background-color: #f7f7f7;\n  border-color: #000000;\n  transform: scale(0.96);\n}\n\n.btn-navbar-type:disabled,\n.add:disabled,\n.edit:disabled,\n.delete:disabled {\n  border-color: #dddddd;\n  color: #dddddd;\n  cursor: not-allowed;\n  opacity: 1;\n}\n.btn-navbar-type:hover,\n.add:hover,\n.edit:hover,\n.delete:hover {\n  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;\n  border: 1px solid #000000;\n  background-color: #0066ff;\n  color: #f7f7f7;\n  transform: translateY(-2px);\n}\n.add:hover {\n  background-color: #1fae51;\n}\n.edit:hover {\n  background-color: #23272b;\n}\n.delete:hover {\n  background-color: #d72503;\n}\n\n.btn-type2 {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background-color: #000000;\n  border: 2px solid #1a1a1a;\n  border-radius: 15px;\n  box-sizing: border-box;\n  color: #ffffff;\n  cursor: pointer;\n  display: inline-block;\n  font-family: Roobert, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica,\n    Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  line-height: normal;\n  margin: 0;\n  min-height: 60px;\n  min-width: 0;\n  outline: none;\n  text-align: center;\n  text-decoration: none;\n  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n  width: 100%;\n  will-change: transform;\n}\n\n.btn-type2:disabled {\n  pointer-events: none;\n}\n\n.btn-type2:hover {\n  background-color: #3079e7;\n  border-color: #fff;\n  box-shadow: rgba(0, 0, 0, 0.288) 0 8px 15px;\n}\n\n.btn-type2:active {\n  box-shadow: none;\n  transform: translateY(0);\n}\n\n.btn-large {\n  font-size: 16px;\n  font-weight: 600;\n  line-height: 20px;\n  padding: 16px 24px;\n}\n\n.btn-normal {\n  font-size: 12px;\n  font-weight: 600;\n  line-height: 12px;\n  padding: 12px 18px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2977,7 +3531,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".card {\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".card {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid #222222;\n  border-radius: 16px;\n}\n.card > img {\n  height: 180px;\n  width: auto;\n  border-radius: 20px;\n  border: double 4px transparent;\n  background-image: linear-gradient(white, white),\n    linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);\n\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n  -o-object-fit: cover;\n     object-fit: cover;\n  padding: 2px;\n  margin: 5px;\n}\n.card > img:hover {\n  border-radius: 20px;\n  background-image: none;\n  border: none;\n  -o-object-fit: cover;\n     object-fit: cover;\n  margin: 5px;\n}\n.card > h1 {\n  text-overflow: ellipsis;\n  font-size: 28px;\n  font-weight: 700;\n  overflow: hidden;\n  white-space: nowrap;\n  padding: 0 7px 0;\n}\n.card > p {\n  overflow: hidden;\n  -webkit-line-clamp: 2;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  white-space: normal;\n  height: 3em;\n  padding: 0 5px 0;\n}\n.card > Button {\n  display: block;\n  position: relative;\n  bottom: 0;\n  overflow: hidden;\n  margin: 0 auto 10px;\n  width: 60%;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3014,6 +3568,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"AlfaSla
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/main-ui/PopUpMessage.css":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/main-ui/PopUpMessage.css ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".greenPopUp,\n.redPopUp {\n  position: absolute;\n  top: 10vh;\n  z-index: 99;\n  display: inline-block;\n  justify-self: center;\n  width: 40vw;\n  height: -webkit-min-content;\n  height: -moz-min-content;\n  height: min-content;\n  text-align: center;\n  font-size: medium;\n  margin: 3rem auto;\n  padding: 3rem;\n  left: 0;\n  right: 0;\n}\n.greenPopUp {\n  color: rgb(0, 65, 9);\n  background-color: rgb(145, 231, 156);\n}\n\n.redPopUp {\n  color: rgb(65, 0, 0);\n  background-color: rgb(231, 145, 145);\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/AddRestaurantForm.css":
 /*!***********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/AddRestaurantForm.css ***!
@@ -3031,7 +3609,61 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".add-form {\n  position: absolute;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.6);\n  -webkit-backdrop-filter: blur(10px);\n  backdrop-filter: blur(10px);\n  width: 100vw;\n  height: 100vh;\n  justify-content: center;\n  color: azure;\n  padding-top: 20px;\n}\n\n.add-form > form {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.add-form input + textarea {\n  width: 80vw;\n}\n.add-form label {\n  font-size: large;\n  text-align: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".add-form {\n  position: fixed;\n  display: flex;\n  flex-direction: column;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.85);\n  -webkit-backdrop-filter: blur(10px);\n  backdrop-filter: blur(10px);\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  color: azure;\n  padding-top: 20px;\n  top: 0;\n}\n\n.add-form > form {\n  display: flex;\n  flex-direction: column;\n  justify-items: center;\n  width: 80vw;\n}\n\n.add-form label {\n  font-size: large;\n  text-align: center;\n}\n\n.submit-btn {\n  border: none;\n  background: none;\n}\n.submit-ctn {\n  margin: auto;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/Detail.css":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/Detail.css ***!
+  \************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _asset_Font_RadioCanada_VariableFont_wdth_wght_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../asset/Font/RadioCanada-VariableFont_wdth,wght.ttf */ "./resources/asset/Font/RadioCanada-VariableFont_wdth,wght.ttf");
+// Imports
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_asset_Font_RadioCanada_VariableFont_wdth_wght_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"RadioCanada\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n.detail-container {\n  display: flex;\n  margin: 0 auto 0;\n  width: 90vw;\n  height: 80vh;\n  font-family: \"RadioCanada\", Courier, monospace;\n}\n.detail-container img {\n  width: 40vw;\n  height: auto;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border: 10px solid;\n  border-image-slice: 1;\n  border-width: 5px;\n  border-image-source: linear-gradient(to left, #00c853, #b2ff59);\n}\n.detail-card {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n  width: 40vw;\n  margin-left: 1rem;\n}\n.Label {\n  font-size: 1.5em;\n}\n.restaurant-id {\n  font-size: 1em;\n}\n.name {\n  font-size: 2em;\n}\n.control-container {\n  max-width: 80vw;\n}\n.deleteConfirm-ctn {\n  position: absolute;\n  display: flex;\n  font-size: medium;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  margin: 3rem auto auto;\n  background-color: rgb(255, 240, 240);\n  border: #000 solid 5px;\n  border-radius: 1rem;\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n  top: 30vh;\n  left: 25vw;\n  right: 25vw;\n}\n.deleteConfirm-btn {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/EditRestaurantForm.css":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/EditRestaurantForm.css ***!
+  \************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".add-form {\n  position: fixed;\n  display: flex;\n  flex-direction: column;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.85);\n  -webkit-backdrop-filter: blur(10px);\n  backdrop-filter: blur(10px);\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  color: azure;\n  padding-top: 20px;\n  top: 0;\n  left: 0;\n}\n\n.add-form > form {\n  display: flex;\n  flex-direction: column;\n  justify-items: center;\n  width: 80vw;\n}\n\n.add-form label {\n  font-size: large;\n  text-align: center;\n}\n\n.submit-btn {\n  border: none;\n  background: none;\n}\n.submit-ctn {\n  margin: auto;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3055,7 +3687,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".list-container {\n  display: grid;\n  grid-auto-flow: row;\n  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n  row-gap: 24px;\n  -moz-column-gap: 20px;\n       column-gap: 20px;\n  margin: 3rem 2rem 3rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".list-container {\n  display: grid;\n  grid-auto-flow: row;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  row-gap: 24px;\n  -moz-column-gap: 20px;\n       column-gap: 20px;\n  margin: 3rem 2rem 3rem;\n}\n\n.title {\n  display: flex;\n  font-size: 2rem;\n  font-weight: 900;\n  justify-content: center;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3209,6 +3841,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/fonts/AlfaSlabOne-Regular.ttf?76486fb5cc170dab15a533649239e733");
+
+/***/ }),
+
+/***/ "./resources/asset/Font/RadioCanada-VariableFont_wdth,wght.ttf":
+/*!*********************************************************************!*\
+  !*** ./resources/asset/Font/RadioCanada-VariableFont_wdth,wght.ttf ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/fonts/RadioCanada-VariableFont_wdth,wght.ttf?b4838e31a8012d3c48451dc150c2b4a1");
 
 /***/ }),
 
@@ -37597,6 +38244,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./resources/js/components/main-ui/PopUpMessage.css":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/main-ui/PopUpMessage.css ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_PopUpMessage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./PopUpMessage.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/main-ui/PopUpMessage.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_PopUpMessage_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_PopUpMessage_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/AddRestaurantForm.css":
 /*!*************************************************************!*\
   !*** ./resources/js/components/pages/AddRestaurantForm.css ***!
@@ -37624,6 +38301,66 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_AddRestaurantForm_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Detail.css":
+/*!**************************************************!*\
+  !*** ./resources/js/components/pages/Detail.css ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_Detail_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./Detail.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/Detail.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_Detail_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_Detail_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/EditRestaurantForm.css":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/pages/EditRestaurantForm.css ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_EditRestaurantForm_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./EditRestaurantForm.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/pages/EditRestaurantForm.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_EditRestaurantForm_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_EditRestaurantForm_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

@@ -1,2 +1,52 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222222;
+  border-radius: 16px;
+}
+.card > img {
+  height: 180px;
+  width: auto;
+  border-radius: 20px;
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  object-fit: cover;
+  padding: 2px;
+  margin: 5px;
+}
+.card > img:hover {
+  border-radius: 20px;
+  background-image: none;
+  border: none;
+  object-fit: cover;
+  margin: 5px;
+}
+.card > h1 {
+  text-overflow: ellipsis;
+  font-size: 28px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 7px 0;
+}
+.card > p {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  height: 3em;
+  padding: 0 5px 0;
+}
+.card > Button {
+  display: block;
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  width: 60%;
 }

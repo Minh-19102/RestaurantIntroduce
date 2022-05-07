@@ -39,7 +39,10 @@
   opacity: 1;
 }
 
-.btn-navbar-type {
+.btn-navbar-type,
+.add,
+.edit,
+.delete {
   background-color: #ffffff;
   border: 1px solid #222222;
   border-radius: 6px;
@@ -62,29 +65,50 @@
   width: auto;
 }
 
-.btn-navbar-type:focus-visible {
+.btn-navbar-type:focus-visible,
+.add:focus-visible,
+.edit:focus-visible,
+.delete:focus-visible {
   box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
   transition: box-shadow 0.2s;
 }
 
-.btn-navbar-type:active {
+.btn-navbar-type:active,
+.add:active,
+.edit:active,
+.delete:active {
   background-color: #f7f7f7;
   border-color: #000000;
   transform: scale(0.96);
 }
 
-.btn-navbar-type:disabled {
+.btn-navbar-type:disabled,
+.add:disabled,
+.edit:disabled,
+.delete:disabled {
   border-color: #dddddd;
   color: #dddddd;
   cursor: not-allowed;
   opacity: 1;
 }
-.btn-navbar-type:hover {
+.btn-navbar-type:hover,
+.add:hover,
+.edit:hover,
+.delete:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   border: 1px solid #000000;
   background-color: #0066ff;
   color: #f7f7f7;
   transform: translateY(-2px);
+}
+.add:hover {
+  background-color: #1fae51;
+}
+.edit:hover {
+  background-color: #23272b;
+}
+.delete:hover {
+  background-color: #d72503;
 }
 
 .btn-type2 {
@@ -118,8 +142,9 @@
 }
 
 .btn-type2:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+  background-color: #3079e7;
+  border-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.288) 0 8px 15px;
 }
 
 .btn-type2:active {

@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
-
+import Button from "../main-ui/Button";
 export default function Card(props) {
   const [img, setImg] = useState([]);
   useEffect(() => {
@@ -15,6 +16,9 @@ export default function Card(props) {
       <div className="restaurant-id">#{props.id}</div>
       <h1>{props.name}</h1>
       <p>{props.introduction}</p>
+      <Link to={`${props.id}`}>
+        <Button btnStyle="btn-type2">Learn more...</Button>
+      </Link>
     </div>
   );
 }
