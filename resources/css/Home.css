@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "OleoScript";
+  src: url("../asset/Font/OleoScript-Bold.ttf");
+}
+.home-ctn {
+  background: url("../asset/image/bgmain.jpg") no-repeat;
+  background-size: 100vw auto;
+  background-position: center;
+  color: aliceblue;
+  position: relative;
+  object-fit: contain;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  margin: 0 auto 0;
+  margin-top: 5vh;
+}
+.home-ctn::after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.Restaurant-name {
+  margin: 50px 0 10px;
+  font-family: OleoScript;
+  font-size: 6em;
+  font-weight: 800;
+  z-index: 1;
+}
+.Restaurant-introduction {
+  font-size: large;
+  width: 60vw;
+  z-index: 1;
+}

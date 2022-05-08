@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AlfaSlabOne";
-  src: URL("../../../asset/Font/AlfaSlabOne-Regular.ttf") format("truetype");
+  src: URL("../asset/Font/AlfaSlabOne-Regular.ttf") format("truetype");
 }
 .page-name {
   font-family: AlfaSlabOne;
@@ -10,8 +10,12 @@
 .navbar-Container {
   display: grid;
   grid-template-columns: 20vw 80vw;
-  width: 100%;
-  top: 0%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: #f8f9fa;
 }
 
 .navbar-logo {
@@ -35,14 +39,15 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: 6px 0 6px auto;
+  margin: 0 0 0 auto;
+  right: 0;
 }
 
 .nav-menu.active.mobile {
   display: flex;
   flex-direction: column;
   grid-column: 1/3;
-  margin: 6px auto 6px auto;
+  margin: 0px auto 0px auto;
   padding: 0;
 }
 

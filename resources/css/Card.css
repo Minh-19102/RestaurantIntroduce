@@ -50,3 +50,7 @@
   margin: 0 auto 10px;
   width: 60%;
 }
+.restaurant-id {
+  text-align: center;
+  font-size: medium;
+}

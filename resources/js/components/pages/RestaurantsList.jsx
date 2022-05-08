@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import axios from "axios";
 import Card from "../main-ui/Card";
-import "./RestaurantsList.css";
+import "../../../css/RestaurantsList.css";
 import AddRestaurantForm from "./AddRestaurantForm";
 import Button from "../main-ui/Button";
 export default class RestaurantsList extends Component {
@@ -31,7 +31,7 @@ export default class RestaurantsList extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="mainList-ctn">
         <div className="title">Restaurants List</div>
         <Button btnStyle="add" btnClick={this.handleAddFormClick}>
           Add

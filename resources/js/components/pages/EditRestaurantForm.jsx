@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import PopUpMessage from "../main-ui/PopUpMessage";
-import "./EditRestaurantForm.css";
+import "../../../css/EditRestaurantForm.css";
 import Button from "../main-ui/Button";
 export default class EditRestaurantForm extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Card.css";
+import "../../../css/Card.css";
 import Button from "../main-ui/Button";
 export default function Card(props) {
   const [img, setImg] = useState([]);

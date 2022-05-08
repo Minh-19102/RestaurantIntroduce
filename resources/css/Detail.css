@@ -1,6 +1,6 @@
 @font-face {
   font-family: "RadioCanada";
-  src: url("../../../asset/Font/RadioCanada-VariableFont_wdth\,wght.ttf");
+  src: url("../asset/Font/RadioCanada-VariableFont_wdth\,wght.ttf");
 }
 .detail-container {
   display: flex;
@@ -8,6 +8,7 @@
   width: 90vw;
   height: 80vh;
   font-family: "RadioCanada", Courier, monospace;
+  overflow-y: auto;
 }
 .detail-container img {
   width: 40vw;

@@ -4,6 +4,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }

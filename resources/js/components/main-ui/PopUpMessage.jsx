@@ -1,5 +1,5 @@
 import React from "react";
-import "./PopUpMessage.css";
+import "../../../css/PopUpMessage.css";
 function PopUpMessage(props) {
   const styles = ["greenPopUp", "redPopUp"];
   let messageStyle = styles[0];

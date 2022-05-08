@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "../../../css/Navbar.css";
 import Button from "./Button";
 import logo from "../../../asset/image/logo.png";
 export default class Navbar extends React.Component {
@@ -39,7 +39,7 @@ export default class Navbar extends React.Component {
           <div className="navbar-Container">
             <Link to="/" className="navbar-logo">
               <img className="logo" src={logo}></img>
-              <span className="page-name">AzurRes</span>
+              <span className="page-name">NimiRes</span>
             </Link>
             {this.state.mobile ? (
               <div

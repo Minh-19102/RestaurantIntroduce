@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Button from "../main-ui/Button";
-import "./Detail.css";
+import "../../../css/Detail.css";
 import PopUpMessage from "../main-ui/PopUpMessage";
 import EditRestaurantForm from "./EditRestaurantForm";
 export default class Detail extends Component {
@@ -63,6 +63,7 @@ export default class Detail extends Component {
       });
   };
   render() {
+    let i = 0;
     return (
       <div>
         <div className="detail-container">
@@ -72,14 +73,23 @@ export default class Detail extends Component {
               Restaurant's ID: #{this.state.id}
             </div>
             <div className="name">{this.state.name}</div>
-            <div className="introduction">{this.state.introduction}</div>
+            <div className="introduction">
+              {this.state.introduction.split("\n").map((line) => (
+                <div key={++i}>{line}</div>
+              ))}
+            </div>
             <div className="menu">
               <div className="Label">Menu</div>
-              {this.state.menu}
+              {this.state.menu.split("\n").map((line) => (
+                <div key={++i}>{line}</div>
+              ))}
             </div>
             <div className="active_time">
               <div className="Label">Active time</div>
-              {this.state.active_time}
+              {typeof this.state.active_time == "string" &&
+                this.state.active_time
+                  .split("\n")
+                  .map((line) => <div key={++i}>{line}</div>)}
             </div>
             <div className="control-container">
               <Button

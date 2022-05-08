@@ -7,6 +7,11 @@
   margin: 3rem 2rem 3rem;
 }
 
+.mainList-ctn {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 85vh;
+}
 .title {
   display: flex;
   font-size: 2rem;
