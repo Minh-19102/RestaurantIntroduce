@@ -13,7 +13,8 @@ class Restaurant extends Model
     'name',
     'introduction',
     'menu',
-    'active_time'
+    'active_time',
+    'owner'
   ];
   public $timestamps = false;
 }

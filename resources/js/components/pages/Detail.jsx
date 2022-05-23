@@ -17,6 +17,7 @@ export default class Detail extends Component {
       edit: false,
       delete: false,
       deletedMessage: false,
+      popUpMessage: false,
     };
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
     this.handleEditClick = this.handleEditClick.bind(this);
@@ -29,12 +30,22 @@ export default class Detail extends Component {
       .get(`http://127.0.0.1:8000/api/restaurants/${this.state.id}`)
       .then((restaurant) => restaurant.data)
       .then((data) => {
-        this.setState({
-          name: data.name,
-          introduction: data.introduction,
-          menu: data.menu,
-          active_time: data.active_time,
-        });
+        if (data.status == 200) {
+          data = data.data;
+          this.setState({
+            name: data.name,
+            introduction: data.introduction,
+            menu: data.menu,
+            active_time: data.active_time,
+          });
+        } else {
+          this.setState({
+            popUpMessage: true,
+          });
+          setTimeout(function () {
+            window.location.replace("/RestaurantsList");
+          }, 3000);
+        }
       });
   }
   handleEditClick = () => {
@@ -66,49 +77,53 @@ export default class Detail extends Component {
     let i = 0;
     return (
       <div>
-        <div className="detail-container">
-          <img src={this.state.imgURL} alt="Restaurant image" />
-          <div className="detail-card">
-            <div className="restaurant-id">
-              Restaurant's ID: #{this.state.id}
-            </div>
-            <div className="name">{this.state.name}</div>
-            <div className="introduction">
-              {this.state.introduction.split("\n").map((line) => (
-                <div key={++i}>{line}</div>
-              ))}
-            </div>
-            <div className="menu">
-              <div className="Label">Menu</div>
-              {this.state.menu.split("\n").map((line) => (
-                <div key={++i}>{line}</div>
-              ))}
-            </div>
-            <div className="active_time">
-              <div className="Label">Active time</div>
-              {typeof this.state.active_time == "string" &&
-                this.state.active_time
-                  .split("\n")
-                  .map((line) => <div key={++i}>{line}</div>)}
-            </div>
-            <div className="control-container">
-              <Button
-                btnStyle="edit"
-                btnSize="btn-normal"
-                btnClick={this.handleEditClick}
-              >
-                Edit
-              </Button>
-              <Button
-                btnStyle="delete"
-                btnSize="btn-normal"
-                btnClick={this.handleDeleteClick}
-              >
-                Delete
-              </Button>
+        {!this.state.popUpMessage && (
+          <div className="detail-container">
+            <img src={this.state.imgURL} alt="Restaurant image" />
+            <div className="detail-card">
+              <div className="restaurant-id">
+                Restaurant's ID: #{this.state.id}
+              </div>
+              <div className="name">{this.state.name}</div>
+              <div className="introduction">
+                {this.state.introduction &&
+                  this.state.introduction
+                    .split("\n")
+                    .map((line) => <div key={++i}>{line}</div>)}
+              </div>
+              <div className="menu">
+                <div className="Label">Menu</div>
+                {this.state.menu &&
+                  this.state.menu
+                    .split("\n")
+                    .map((line) => <div key={++i}>{line}</div>)}
+              </div>
+              <div className="active_time">
+                <div className="Label">Active time</div>
+                {typeof this.state.active_time == "string" &&
+                  this.state.active_time
+                    .split("\n")
+                    .map((line) => <div key={++i}>{line}</div>)}
+              </div>
+              <div className="control-container">
+                <Button
+                  btnStyle="edit"
+                  btnSize="btn-normal"
+                  btnClick={this.handleEditClick}
+                >
+                  Edit
+                </Button>
+                <Button
+                  btnStyle="delete"
+                  btnSize="btn-normal"
+                  btnClick={this.handleDeleteClick}
+                >
+                  Delete
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        )}
         {this.state.edit && (
           <EditRestaurantForm
             handle={this.handleEditClick}
@@ -135,6 +150,11 @@ export default class Detail extends Component {
             Deleted Successfully
             <br />
             You will be redirected in 3 seconds
+          </PopUpMessage>
+        )}
+        {this.state.popUpMessage && (
+          <PopUpMessage messageStyle="redPopUp">
+            You don't have permission to view the detail
           </PopUpMessage>
         )}
       </div>

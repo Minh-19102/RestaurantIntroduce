@@ -16,7 +16,7 @@ export default function Card(props) {
       <div className="restaurant-id">#{props.id}</div>
       <h1>{props.name}</h1>
       <p>{props.introduction}</p>
-      <Link to={`${props.id}`}>
+      <Link to={`/RestaurantsList/${props.id}`}>
         <Button btnStyle="btn-type2">Learn more...</Button>
       </Link>
     </div>

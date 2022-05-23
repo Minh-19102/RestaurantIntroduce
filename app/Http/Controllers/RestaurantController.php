@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
 use Illuminate\Contracts\Cache\Store;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 class RestaurantController extends Controller
 {
@@ -60,8 +61,20 @@ class RestaurantController extends Controller
      */
     public function show($id)
     {
-        $detail = Restaurant::find($id);
-        return $detail;
+        if(auth('sanctum')->check()){
+          $user = auth('sanctum')->user();
+          $detail = Restaurant::find($id);
+          if($user->level==1 || $user->id == $detail->owner){
+            return response()->json([
+              'status' => 200,
+              'data' => $detail
+            ]);
+          }
+        }
+        else return response()->json([
+          'status' => 404,
+          'Message' => "You don't have permission to see the detail information."
+        ]);
     }
 
     /**

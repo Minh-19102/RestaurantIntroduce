@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "../../../css/Navbar.css";
 import Button from "./Button";
 import logo from "../../../asset/image/logo.png";
+import axios from "axios";
 export default class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       click: !(window.innerWidth <= 900),
       mobile: window.innerWidth <= 900,
+      login: localStorage.getItem("username"),
     };
     this.handleClick = this.handleClick.bind(this);
     window.addEventListener("resize", () => {
@@ -23,6 +25,11 @@ export default class Navbar extends React.Component {
           click: true,
         });
       }
+    });
+  }
+  async componentDidMount() {
+    await axios.get("/api/user").then((data) => {
+      console.log(data);
     });
   }
   handleClick() {
@@ -90,6 +97,31 @@ export default class Navbar extends React.Component {
                   </Button>
                 </Link>
               </li>
+              {!this.state.login ? (
+                <li className="nav-item">
+                  <Link to="/Login" className="nav-link">
+                    <Button btnStyle="btn-navbar-type" btnSize="btn-normal">
+                      Login
+                    </Button>
+                  </Link>
+                </li>
+              ) : (
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                    <Button
+                      btnStyle="btn-navbar-type"
+                      btnSize="btn-normal"
+                      btnClick={() => {
+                        localStorage.removeItem("username");
+                        localStorage.removeItem("access_token");
+                        this.setState((state) => ({ login: !state.login }));
+                      }}
+                    >
+                      Logout
+                    </Button>
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </nav>
